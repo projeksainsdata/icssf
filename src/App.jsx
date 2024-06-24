@@ -15,6 +15,7 @@ import EditProfile from "./pages/edit-profile.page";
 import Notifications from "./pages/notifications.page";
 import ManageBlogs from "./pages/manage-blogs.page";
 import Footer from "./pages/footer.page";
+import InformationPage from "./pages/information";
 
 export const UserContext = createContext({});
 
@@ -37,6 +38,7 @@ const App = () => {
             <div className="flex flex-col min-h-screen">
                 <main className="flex-grow">
                     <Routes>
+                    <Route path="/information" element={<InformationPage />} />
                         <Route path="/editor" element={<Editor />} />
                         <Route path="/editor/:blog_id" element={<Editor />} />
                         <Route path="/" element={<Navbar />}>

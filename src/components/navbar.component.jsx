@@ -110,7 +110,7 @@ const Navbar = () => {
                                 Sign In
                             </Link>
                             <Link className="btn-light py-2" to="/signup">
-                                Sign Up
+                                Register
                             </Link>
                         </>
                     )}

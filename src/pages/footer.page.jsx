@@ -43,7 +43,7 @@ const Footer = () => {
                     href={link.url}
                     target="__blank"
                     key={link.id}
-                    className="circle-button text-dark-400 cursor-pointer rounded-lg bg-dark-50 dark:bg-ternary-dark hover:bg-light-grey shadow-md p-4 duration-300"
+                    className="circle-button text-dark-400 cursor-pointer rounded-lg bg-dark-50 dark:bg-ternary-dark hover:bg-green-orange shadow-md p-4 duration-300"
                   >
                     <i className="text-xl sm:text-2xl md:text-3xl">{link.icon}</i>
                   </a>

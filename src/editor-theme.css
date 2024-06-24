@@ -104,3 +104,25 @@ object-fit: cover;
 .container {
     padding: 0 2rem;
 }
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-item span {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.countdown-item2 {
+    font-size: 3rem;
+    font-weight: bold;
+}

@@ -17,8 +17,10 @@ import prof1 from "../imgs/prof1.png";
 import prof2 from "../imgs/prof2.png";
 import video from "../imgs/video.mp4";
 import React from 'react';
-import { FaDiscord } from 'react-icons/fa';
 import Timeline from "../components/timeline.component";
+import CountdownSection from "../components/countdown.component";
+import VenueSection from "../components/vanue.component";
+import vanue from "../imgs/gdf.jpg";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -126,7 +128,7 @@ const HomePage = () => {
 
                     
                     <h1 className="text-3xl md:mt-10 font-bold text-black lg:text-6xl">
-                        1st International Conference On Sustainability of Sciences for the Future {' '}
+                        1st International Conference On Sustainability of Sciences for the Future
                         <h1 className="text-2xl text-blue">September 26-27th, 2024 </h1>
                     </h1>
                     
@@ -144,12 +146,12 @@ const HomePage = () => {
                         With this in mind, cultivating curiosity and interest in the new generation of scientists is not only crucial for their emotional and intellectual development, but also important to ensure a promising future for scientific exploration and discovery.
                     </p>
                     <Link 
-                        className="btn-light bg-dark-blue rounded-full gap-2 mb-6 py-2 " 
+                        className="btn-light bg-dark-blue text-2xl text-white rounded-full gap-2 mb-6 py-2 " 
                         to="/submission" 
                         onClick={handleNavLinkClick}
                     >
-                        <i className="fi fi-sr-memo-circle-check mr-2"></i>
-                          Submisson
+                        <i className="fi fi-sr-memo-circle-check text-xl mr-2"></i>
+                          Call For Paper
                     </Link>
 
                     <div className="mt-10 md:hidden items-center w-full h-60 relative">
@@ -160,6 +162,27 @@ const HomePage = () => {
                 <div className="lg:w-1/2 ml-10 flex justify-center items-center">
                     <div className="hidden md:flex relative">
                         <img src={ban} alt="ICSSF" className="w-full h-full shadow-md rounded-lg object-cover" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">
+                <div className="lg:w-1/2">
+                    <div className="lg:w-full p-4">
+                        <strong className="text-blue">
+                        <i className="fi fi-sr-info mr-2 text-md"></i> About ICSSF 2024</strong>
+                        <p className="mt-6 justify-between text-justify">
+                        The development of science and technology produces global changes in various aspects of life. The prosperity of a nation does not only come from physical natural resources but also human resources in the form of intellectual capital, social capital, and credibility. The demand to improve the quality of education is a necessity in today's industry. These improvements are developed based on high levels of knowledge and competence. Therein lies the important role of education in building the nation. Education must be able to prepare students with a high intellectual level with an understanding of science and technology and have multidimensional competencies so that they can overcome all kinds of life challenges in the future creatively, independently, intelligently, critically, rationally, and relevantly.
+                        </p>
+                    </div>
+                </div>
+                <div className="lg:w-1/2">
+                    <div className="lg:w-full p-4 mb-4">
+                        <strong className="text-blue" >
+                        <i className="fi fi-sr-document mr-2 text-md"></i>Submission</strong>
                     </div>
                 </div>
             </div>
@@ -263,9 +286,44 @@ const HomePage = () => {
                 </div>
         </section>
 
-        <section className="md:w-200 md:px-80 items-center justify-center">
-            <Timeline />
+        <section>
+        <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">
+            <div className="lg:w-1/2 items-center justify-center">
+                <Timeline />
+            </div>
+            <div className="lg:w-1/2">
+     
+                        <strong className="p-4 text-blue">
+                        <i className="fi fi-sr-check-circle mr-2 text-md"></i>Recent Post</strong>
+        
+            </div>
+        </div>
+            <div className="mt-6 mb-6">
+                <CountdownSection />
+            </div>
         </section>
+        
+        <section className="bg-green-orange container p-2">
+        <div className="relative flex flex-col lg:flex-row gap-4 p-2 max-w-6xl mx-auto">
+            <div className="lg:w-1/2">
+                <h2 className="text-3xl font-semibold text-center mb-2">Vanue</h2>
+                <img src={vanue} alt="venue" className="w-100 h-80 rounded-lg shadow-md"></img>
+            </div>
+            <div className="lg:w-1/2 md:mt-10" style={{ paddingBottom: '40%', position: 'relative' }}>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15889.53526860214!2d105.3148495!3d-5.3582643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40c35634c1a611%3A0xcb3cf692dbb4f26!2sInstitut%20Teknologi%20Sumatera!5e0!3m2!1sen!2sid!4v1719246738849!5m2!1sen!2sid" 
+                width="100%" 
+                height="80%" 
+                style={{ border: 0, position: 'absolute', top: 0, left: 0 }}
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+            </div>
+        </div>
+        </section>
+
 
 
         </AnimationWrapper>

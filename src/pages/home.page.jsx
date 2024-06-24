@@ -18,6 +18,7 @@ import prof2 from "../imgs/prof2.png";
 import video from "../imgs/video.mp4";
 import React from 'react';
 import { FaDiscord } from 'react-icons/fa';
+import Timeline from "../components/timeline.component";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -262,6 +263,9 @@ const HomePage = () => {
                 </div>
         </section>
 
+        <section className="md:w-200 md:px-80 items-center justify-center">
+            <Timeline />
+        </section>
 
 
         </AnimationWrapper>

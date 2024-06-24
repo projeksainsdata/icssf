@@ -67,7 +67,7 @@ const UserAuthForm = ({ type }) => {
       <Navigate to="/" />
     ) : (
       <AnimationWrapper keyValue={type}>
-        <section className="relative h-screen overflow-hidden">
+        <section className="relative h-full overflow-hidden">
           <video 
             autoPlay 
             loop 

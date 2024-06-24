@@ -11,7 +11,7 @@ import { filterPaginationData } from "../common/filter-pagination-data";
 import LoadMoreDataBtn from "../components/load-more.component";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import ban from "../imgs/pict1.png";
+import ban from "../imgs/seminar.jpg";
 import band from "../imgs/pict2.png";
 import prof1 from "../imgs/prof1.png";
 import prof2 from "../imgs/prof2.png";
@@ -122,9 +122,7 @@ const HomePage = () => {
 
             <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">
                 <div className="lg:w-1/2">
-                    <div className="md:hidden items-center w-40 h-40 relative">
-                        <img src={ban} alt="ICSSF" className="w-40 h-40 items-center object-cover" />
-                    </div>
+
                     
                     <h1 className="text-3xl md:mt-10 font-bold text-black lg:text-6xl">
                         1st International Conference On Sustainability of Sciences for the Future {' '}
@@ -152,11 +150,15 @@ const HomePage = () => {
                         <i className="fi fi-sr-memo-circle-check mr-2"></i>
                           Submisson
                     </Link>
+
+                    <div className="mt-10 md:hidden items-center w-full h-60 relative">
+                        <img src={ban} alt="ICSSF" className="w-full h-46 rounded-lg shadow-md items-center object-cover" />
+                    </div>
                 </div>
 
                 <div className="lg:w-1/2 ml-10 flex justify-center items-center">
                     <div className="hidden md:flex relative">
-                        <img src={ban} alt="ICSSF" className="w-11/12 h-11/12 object-cover" />
+                        <img src={ban} alt="ICSSF" className="w-full h-full shadow-md rounded-lg object-cover" />
                     </div>
                 </div>
             </div>

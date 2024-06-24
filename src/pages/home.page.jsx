@@ -238,7 +238,7 @@ const HomePage = () => {
             <div className="relative container mx-auto px-6 py-8">
                     <h2 className="text-3xl font-semibold text-center mb-2">Invited Speakers</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="bg-green-orange p-6 rounded-lg shadow-lg">
+                        <div className="bg-blur p-6 rounded-lg shadow-lg">
                             <div className="flex items-center mb-4">
                                 <img src={prof1} alt="Speaker 1" className="w-20 h-20 absolute rounded-full mr-2"/>
                                 <div className="ml-24">
@@ -247,7 +247,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-green-orange p-6 rounded-lg shadow-lg">
+                        <div className="bg-blur p-6 rounded-lg shadow-lg">
                             <div className="flex items-center mb-4">
                                 <img src={prof2} alt="Speaker 2" className="w-20 h-20 absolute rounded-full mr-2"/>
                                 <div className="ml-24">

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import "@flaticon/flaticon-uicons/css/all/all";
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import "./editor-theme.css";
 
 @tailwind base;
@@ -52,7 +53,7 @@
     }
 
     .btn-light{
-        @apply btn-dark bg-grey text-black;
+        @apply btn-dark bg-green-orange text-black;
     }
 
     .input-box {

@@ -73,4 +73,25 @@ body[data-theme="dark"] .ce-conversion-tool:hover{
     backdrop-filter: blur(50px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
+/* src/App.css or relevant stylesheet */
+.overlay-mask {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
 
+.auth-image-container {
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.auth-image {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+  

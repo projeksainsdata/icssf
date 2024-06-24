@@ -13,6 +13,8 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import ban from "../imgs/pict1.png";
 import band from "../imgs/pict2.png";
+import prof1 from "../imgs/prof1.png";
+import prof2 from "../imgs/prof2.png";
 import video from "../imgs/video.mp4";
 import React from 'react';
 import { FaDiscord } from 'react-icons/fa';
@@ -123,21 +125,16 @@ const HomePage = () => {
                     <div className="md:hidden items-center w-40 h-40 relative">
                         <img src={ban} alt="ICSSF" className="w-40 h-40 items-center object-cover" />
                     </div>
+                    
                     <h1 className="text-3xl md:mt-10 font-bold text-black lg:text-6xl">
-                        1st International Conference On Sustainability of Sciences for the Future : {' '}
-                        <Typewriter
-                            options={{
-                                wrapperClassName: 'typewrite text-black text-2xl lg:text-6xl',
-                                strings: ['Nature Sciences', 'Environmental Science', 'Pharmacy'],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />
+                        1st International Conference On Sustainability of Sciences for the Future {' '}
+                        <h1 className="text-2xl text-blue">September 26-27th, 2024 </h1>
                     </h1>
+                    
                     <p className="mt-5 items-center"></p>
                     <Link 
                         className="text-xl text-light-green italic font-bold gap-10 mx-auto mb-5 py-2" 
-                        to="/projek-kami" 
+                        to="/tema" 
                         onClick={handleNavLinkClick}
                     >
                         "Building Up The Next Generation of Scientists"
@@ -164,6 +161,106 @@ const HomePage = () => {
                 </div>
             </div>
         </section>
+
+        <section className="bg-mobile-blur">
+            <div>
+                <h1 className="justify-center mb-2 flex md:text-left text-3xl font-bold text-black"> Conference Topics</h1>
+            </div>
+            <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">
+                <div className="lg:w-1/2">
+                    <div className="lg:w-full bg-black-light rounded-lg shadow p-4 mb-4">
+                        
+                        <h1 className="text-2xl mb-4 font-blod text-light-green flex items-center justify-center">
+                        <i className="fi fi-sr-microscope mr-2 text-2xl"></i> Nature Sciences</h1>
+                        <ul className="list-disc text-xl pl-5 text-left">
+                            <li>Mathematics</li>
+                            <li>Physics</li>
+                            <li>Biology</li>
+                            <li>Chemistry</li>
+                            <li>Astronomy</li>
+                            <li>Meteorology</li>
+                            <li>Atmospheric and Planetary Science</li>
+                            <li>Earth Science</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="lg:w-1/2">
+                    <div className="lg:w-full bg-black-light rounded-lg shadow p-4 mb-4">
+                        <h1 className="text-2xl mb-4 font-blod text-light-green flex items-center justify-center">
+                        <i className="fi fi-sr-leaf mr-2 text-2xl"></i> Environmental Sciences</h1>
+                        <ul className="list-disc text-xl pl-5 text-left">
+                            <li>Global Environmental Change and Disaster Management</li>
+                            <li>Natural Resources Science</li>
+                            <li>Environmental Dynamics and Ecosystem</li>
+                            <li>Environmental Management and Policy</li>
+                            <li>Renewable energy</li>
+                            <li>Ecology and Biodiversity</li>
+                            <li>Environmental Pollution</li>
+                            <li>Solid Waste Management</li>
+                            <li>Global Pandemic</li>
+                            <li>Carbon Footprint</li>
+                            <li>Urban city heat impact</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="lg:w-1/2">
+                    <div className="lg:w-full bg-black-light rounded-lg shadow p-4 mb-4">
+                        <h1 className="text-2xl mb-4 font-blod text-light-green flex items-center justify-center">
+                        <i className="fi fi-sr-capsules mr-2 text-2xl"></i> Pharmacy</h1>
+                        <ul className="list-disc text-xl pl-5 text-left">
+                            <li>Pharmaceutical Sciences</li>
+                            <li>Global Health and Pharmacy</li>
+                            <li>Pharmacy Automation and Technology</li>
+                            <li>Physical Pharmacy and Cosmetic</li>
+                            <li>Natural Products Chemistry and Pharmacognosy</li>
+                            <li>Medicinal and Pharmaceutical Chemistry</li>
+                            <li>Precision Medicine</li>
+                            <li>Pharmacy Policy and Regulatory</li>
+                            <li>Clinical and Industrial Drug</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="relative h-auto overflow-hidden">
+            <video 
+                autoPlay 
+                loop 
+                muted 
+                className="absolute top-0 left-0 w-full h-full object-cover"
+            >
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="absolute top-0 left-0 w-full h-full bg-black-bg opacity-80"></div>
+            
+            <div className="relative container mx-auto px-6 py-8">
+                    <h2 className="text-3xl font-semibold text-center mb-2">Invited Speakers</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="bg-green-orange p-6 rounded-lg shadow-lg">
+                            <div className="flex items-center mb-4">
+                                <img src={prof1} alt="Speaker 1" className="w-20 h-20 absolute rounded-full mr-2"/>
+                                <div className="ml-24">
+                                    <h3 className="text-xl text-light-green font-bold">Prof. Hideyo Kawakita</h3>
+                                    <p className="text-black">Faculty of Science, Department of Astrophysics and Meteorology, Kyoto Sangyo University</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="bg-green-orange p-6 rounded-lg shadow-lg">
+                            <div className="flex items-center mb-4">
+                                <img src={prof2} alt="Speaker 2" className="w-20 h-20 absolute rounded-full mr-2"/>
+                                <div className="ml-24">
+                                    <h3 className="text-xl text-light-green font-bold">Speaker 2</h3>
+                                    <p className="text-black">Title/Position</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
 
         </AnimationWrapper>
     );

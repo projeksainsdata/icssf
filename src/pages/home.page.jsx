@@ -108,7 +108,7 @@ const HomePage = () => {
 
     return (
         <AnimationWrapper>
-        <section className="relative h-screen overflow-hidden">
+        <section className="relative h-auto md:h-screen overflow-hidden">
             <video 
                 autoPlay 
                 loop 

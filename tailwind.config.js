@@ -47,7 +47,7 @@ export default {
                 'grey' :'#1C82AD',
                 'light-grey': '#2C2C2C',
                 'dark-grey': '#A6A6A6',
-                'dark-blue': '#00337C',
+                'dark-blue': '#3389f0',
                 'blue' : '#3389f0',
                 'light-green':'#03C988',
                 'red': '#FF3B3B',

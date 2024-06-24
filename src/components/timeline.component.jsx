@@ -35,10 +35,10 @@ const Timeline = () => {
         <div className="relative">
           <div className="border-l-4 border-blue absolute h-full left-1/2 transform -translate-x-1/2"></div>
           {events.map((event, index) => (
-            <div key={index} className="mb-8 flex justify-between items-center w-full">
-              <div className={`w-5/12 ${index % 2 === 0 ? 'order-1' : 'order-2'} `}>
+            <div key={index} className="flex justify-between items-center w-full">
+              <div className={`w-6/12 ${index % 2 === 0 ? 'order-1' : 'order-2'} `}>
                 <div className="bg-green-orange p-4 rounded-lg shadow-md">
-                  <h1 className="text-xl text-light-green font-bold mb-2">{event.month}</h1>
+                  <h1 className="text-xl text-light-green font-bold mb-1">{event.month}</h1>
                   <p>{event.description}</p>
                 </div>
               </div>

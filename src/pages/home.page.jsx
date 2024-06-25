@@ -19,7 +19,6 @@ import video from "../imgs/video.mp4";
 import React from 'react';
 import Timeline from "../components/timeline.component";
 import CountdownSection from "../components/countdown.component";
-import VenueSection from "../components/vanue.component";
 import vanue from "../imgs/gdf.jpg";
 
 const HomePage = () => {

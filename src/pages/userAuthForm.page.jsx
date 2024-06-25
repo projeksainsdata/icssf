@@ -9,8 +9,8 @@ import { storeInSession } from "../common/session";
 import { UserContext } from "../App";
 
 import googleIcon from "../imgs/google.png";
-import signinImg from "../imgs/login.png";
-import signupImg from "../imgs/pict1.png";
+import signinImg from "../imgs/youngs.png";
+import signupImg from "../imgs/youngs.png";
 import video from "../imgs/video.mp4";
 
 const UserAuthForm = ({ type }) => {

@@ -123,14 +123,15 @@ const HomePage = () => {
             </video>
             <div className="absolute top-0 left-0 w-full h-full bg-black-bg opacity-80"></div>
 
+            <h1 className="relative text-3xl md:mt-10 font-bold text-black lg:text-6xl">
+                        1st International Conference On Sustainability of Sciences for the Future
+                        <h1 className="text-2xl text-blue">September 26-27th, 2024 </h1>
+                    </h1>
             <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">
                 <div className="lg:w-1/2">
 
                     
-                    <h1 className="text-3xl md:mt-10 font-bold text-black lg:text-6xl">
-                        1st International Conference On Sustainability of Sciences for the Future
-                        <h1 className="text-2xl text-blue">September 26-27th, 2024 </h1>
-                    </h1>
+
                     
                     <p className="mt-5 items-center"></p>
                     <Link 
@@ -154,15 +155,10 @@ const HomePage = () => {
                           Call For Paper
                     </Link>
 
-                    <div className="mt-10 md:hidden items-center w-full h-60 relative">
-                        <img src={ban} alt="ICSSF" className="w-full h-46 rounded-lg shadow-md items-center object-cover" />
-                    </div>
                 </div>
 
                 <div className="lg:w-1/2 ml-10 flex justify-center items-center">
-                    <div className="hidden md:flex relative">
-                        <img src={ban} alt="ICSSF" className="w-full h-full shadow-md rounded-lg object-cover" />
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -171,19 +167,26 @@ const HomePage = () => {
 
             <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">
                 <div className="lg:w-1/2">
-                    <div className="lg:w-full p-4">
-                        <strong className="text-blue">
-                        <i className="fi fi-sr-info mr-2 text-md"></i> About ICSSF 2024</strong>
-                        <p className="mt-6 justify-between text-justify">
-                        The development of science and technology produces global changes in various aspects of life. The prosperity of a nation does not only come from physical natural resources but also human resources in the form of intellectual capital, social capital, and credibility. The demand to improve the quality of education is a necessity in today's industry. These improvements are developed based on high levels of knowledge and competence. Therein lies the important role of education in building the nation. Education must be able to prepare students with a high intellectual level with an understanding of science and technology and have multidimensional competencies so that they can overcome all kinds of life challenges in the future creatively, independently, intelligently, critically, rationally, and relevantly.
-                        </p>
+                    <strong className="p-4 text-blue">
+                    <i className="fi fi-sr-check-circle mr-2 text-md"></i>Recent Post</strong>
+                    <div>
+                        <div className="lg:w-full p-4">
+                            <strong className="text-blue">
+                            <i className="fi fi-sr-info mr-2 text-md"></i> About ICSSF 2024</strong>
+                            <p className="mt-6 justify-between text-justify">
+                            The development of science and technology produces global changes in various aspects of life. The prosperity of a nation does not only come from physical natural resources but also human resources in the form of intellectual capital, social capital, and credibility. The demand to improve the quality of education is a necessity in today's industry. These improvements are developed based on high levels of knowledge and competence. Therein lies the important role of education in building the nation. Education must be able to prepare students with a high intellectual level with an understanding of science and technology and have multidimensional competencies so that they can overcome all kinds of life challenges in the future creatively, independently, intelligently, critically, rationally, and relevantly.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="lg:w-full p-4 mb-4">
+                            <strong className="text-blue" >
+                            <i className="fi fi-sr-document mr-2 text-md"></i>Submission</strong>
+                        </div>
                     </div>
                 </div>
-                <div className="lg:w-1/2">
-                    <div className="lg:w-full p-4 mb-4">
-                        <strong className="text-blue" >
-                        <i className="fi fi-sr-document mr-2 text-md"></i>Submission</strong>
-                    </div>
+                <div className="lg:w-1/2 items-center justify-center">
+                    <Timeline />
                 </div>
             </div>
         </section>
@@ -193,7 +196,7 @@ const HomePage = () => {
                 <h1 className="justify-center mb-2 flex md:text-left text-3xl font-bold text-black"> Conference Topics</h1>
             </div>
             <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">
-                <div className="lg:w-1/2">
+                <div className="lg:w-1/3">
                     <div className="lg:w-full bg-black-light rounded-lg shadow p-4 mb-4">
                         
                         <h1 className="text-2xl mb-4 font-blod text-light-green flex items-center justify-center">
@@ -210,7 +213,7 @@ const HomePage = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="lg:w-1/2">
+                <div className="lg:w-2/3">
                     <div className="lg:w-full bg-black-light rounded-lg shadow p-4 mb-4">
                         <h1 className="text-2xl mb-4 font-blod text-light-green flex items-center justify-center">
                         <i className="fi fi-sr-leaf mr-2 text-2xl"></i> Environmental Sciences</h1>
@@ -287,18 +290,7 @@ const HomePage = () => {
         </section>
 
         <section>
-        <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">
-            <div className="lg:w-1/2 items-center justify-center">
-                <Timeline />
-            </div>
-            <div className="lg:w-1/2">
-     
-                        <strong className="p-4 text-blue">
-                        <i className="fi fi-sr-check-circle mr-2 text-md"></i>Recent Post</strong>
-        
-            </div>
-        </div>
-            <div className="mt-6 mb-6">
+            <div className="mb-6">
                 <CountdownSection />
             </div>
         </section>
@@ -306,7 +298,7 @@ const HomePage = () => {
         <section className="bg-green-orange container p-2">
         <div className="relative flex flex-col lg:flex-row gap-4 p-2 max-w-6xl mx-auto">
             <div className="lg:w-1/2">
-                <h2 className="text-3xl font-semibold text-center mb-2">Vanue</h2>
+                <h2 className="text-3xl font-semibold text-center mb-2">Venue</h2>
                 <img src={vanue} alt="venue" className="w-100 h-80 rounded-lg shadow-md"></img>
             </div>
             <div className="lg:w-1/2 md:mt-10" style={{ paddingBottom: '40%', position: 'relative' }}>

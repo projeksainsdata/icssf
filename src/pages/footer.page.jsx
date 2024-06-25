@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer>
         
-        <div className="container mt-10">
+        <div className="container mt-0">
           <div className='pt-5 border-t-2 border-white'>
             <div className="flex items-center justify-start md:ml-20 flex-col sm:flex-row mb-5">
               <img src={logoDark} alt="Footer Logo" className="h-40 w-auto mb-5 mr-5 sm:mb-0" />

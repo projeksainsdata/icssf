@@ -123,7 +123,7 @@ const HomePage = () => {
             </video>
             <div className="absolute top-0 left-0 w-full h-full bg-black-bg opacity-80"></div>
 
-            <h1 className="relative text-3xl md:mt-10 font-bold text-black lg:text-6xl">
+            <h1 className="relative text-3xl mt-10 font-bold text-black lg:text-6xl">
                         1st International Conference On Sustainability of Sciences for the Future
                         <h1 className="text-2xl text-blue">September 26-27th, 2024 </h1>
                     </h1>
@@ -131,7 +131,9 @@ const HomePage = () => {
                 <div className="lg:w-1/2">
 
                     
-
+                    <div className='relative md:hidden justify-center items-center'>
+                        <img src={ban} alt="youngs" className="w-96 h-44 object-cover" />
+                    </div>
                     
                     <p className="mt-5 items-center"></p>
                     <Link 
@@ -143,8 +145,8 @@ const HomePage = () => {
                     </Link>
                     <p className="items-center"></p>
 
-                    <p className="text-gray-500 mt-5 mb-5 text-xl">
-                        With this in mind, cultivating curiosity and interest in the new generation of scientists is not only crucial for their emotional and intellectual development, but also important to ensure a promising future for scientific exploration and discovery.
+                    <p className="text-gray-500 mt-5 mb-5 text-xl text-justify">
+                    With this in mind, cultivating curiosity and interest in the new generation of scientists is crucial for their emotional and intellectual development and essential for a promising future in scientific exploration and discovery. Encouraging young minds to ask questions and embrace scientific challenges builds critical thinking and problem-solving skills. Fostering a passion for science inspires the next generation to push boundaries, driving innovation and progress across various fields. 
                     </p>
                     <Link 
                         className="btn-light bg-dark-blue text-2xl text-white rounded-full gap-2 mb-6 py-2 " 
@@ -158,10 +160,11 @@ const HomePage = () => {
                 </div>
 
                 <div className="lg:w-1/2 ml-10 flex justify-center items-center">
-                    <div className='relative flex'>
-                        <img src={ban} alt="youngs" className="w-4/5 h-4/5 object-cover" />
+                    <div className="hidden md:flex md:relative justify-center items-center">
+                        <img src={ban} alt="youngs" className="md:w-4/5 md:h-4/5 object-cover" />
                     </div>
                 </div>
+
             </div>
         </section>
 

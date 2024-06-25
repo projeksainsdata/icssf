@@ -126,3 +126,26 @@ object-fit: cover;
     font-size: 3rem;
     font-weight: bold;
 }
+
+@keyframes move-random {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(50px, 50px);
+    }
+    50% {
+      transform: translate(-50px, -50px);
+    }
+    75% {
+      transform: translate(50px, -50px);
+    }
+    100% {
+      transform: translate(-50px, 50px);
+    }
+}
+  
+.random-move {
+    animation: move-random 5s infinite;
+}
+  

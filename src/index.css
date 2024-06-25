@@ -2,6 +2,7 @@
 @import "@flaticon/flaticon-uicons/css/all/all";
 @import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import "./editor-theme.css";
+@import 'animate.css';
 
 @tailwind base;
 @tailwind components;
@@ -38,6 +39,10 @@
 
     .navbar{
         @apply z-10 sticky top-0 flex items-center gap-12 w-full px-[5vw] py-5 h-[80px] border-b border-light-grey bg-blur;
+    }
+
+    .navbar-transparent {
+        @apply bg-transparent;
     }
 
     .h-cover{

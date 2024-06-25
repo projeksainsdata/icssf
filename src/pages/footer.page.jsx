@@ -4,6 +4,7 @@ import { useContext } from "react";
 // Import the desired FlatIcon icons here
 import { FaInstagram, FaGithub, FaYoutube, FaDiscord, FaTwitter } from 'react-icons/fa';
 import logoDark from "../imgs/logo-icssf-btn.png";
+import itera from "../imgs/logo_itera_putih.png";
 import logoLight from "../imgs/logo-icssf-btn.png";
 import { Link } from 'react-router-dom';
 
@@ -33,11 +34,19 @@ const Footer = () => {
   return (
     <footer>
         
-        <div className="container mt-0">
-          <div className='pt-5 border-t-2 border-white'>
-            <div className="flex items-center justify-start md:ml-20 flex-col sm:flex-row mb-5">
-              <img src={logoDark} alt="Footer Logo" className="h-40 w-auto mb-5 mr-5 sm:mb-0" />
-              <ul className="flex gap-2 sm:gap-2">
+        <div className="container">
+
+          <div className="flex sm:flex-row items-center md:ml-20 md:mr-20 flex-col">
+
+            <div className='lg:w-3/3 items-center justify-center mt-6'>
+              <img src={itera} alt='itera' className="md:h-32 h-20 w-auto mb-2 mr-5 sm:mb-0" />
+            </div>
+            <div className='lg:w-3/3 items-center justify-center mt-6'>
+              <img src={logoDark} alt="Footer Logo" className="md:h-40 h-20 w-auto mb-2 mr-5 sm:mb-0" />
+            </div>
+
+            <div className='lg:w-2/3 '>
+          <ul className="flex gap-2 sm:gap-2 items-right justify-end">
                 {socialLinks.map((link) => (
                   <a
                     href={link.url}
@@ -49,12 +58,14 @@ const Footer = () => {
                   </a>
                 ))}
               </ul>
-            </div>
-            <div className="font-general-regular flex flex-col justify-right mb-5 items-center sm:mb-1">
-              <p className="mt-5 mb-10">
-                {`Copyright © ICSSF ${year}`}
-              </p>
-            </div>
+          </div>
+
+          </div>
+          <div className="font-general-regular flex flex-col justify-right mb-5 items-center sm:mb-1">
+
+          <p className="mt-5 mb-10">
+            {`Copyright © ICSSF ${year}`}
+          </p>
           </div>
         </div>
     </footer>

@@ -11,7 +11,7 @@ import { filterPaginationData } from "../common/filter-pagination-data";
 import LoadMoreDataBtn from "../components/load-more.component";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import ban from "../imgs/seminar.jpg";
+import ban from "../imgs/youngs.png";
 import band from "../imgs/pict2.png";
 import prof1 from "../imgs/prof1.png";
 import prof2 from "../imgs/prof2.png";
@@ -158,7 +158,9 @@ const HomePage = () => {
                 </div>
 
                 <div className="lg:w-1/2 ml-10 flex justify-center items-center">
-
+                    <div className='relative flex'>
+                        <img src={ban} alt="youngs" className="w-4/5 h-4/5 object-cover" />
+                    </div>
                 </div>
             </div>
         </section>

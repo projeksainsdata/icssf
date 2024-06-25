@@ -186,7 +186,7 @@ const HomePage = () => {
                         onClick={handleNavLinkClick}
                     >
                         <i className="fi fi-sr-memo-circle-check text-md mr-2"></i>
-                          Information
+                          Info
                     </Link>
             </div>
             <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">

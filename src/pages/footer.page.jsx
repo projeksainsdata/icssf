@@ -3,7 +3,7 @@ import { ThemeContext } from '../App';
 import { useContext } from "react";
 // Import the desired FlatIcon icons here
 import { FaInstagram, FaGithub, FaYoutube, FaDiscord, FaTwitter } from 'react-icons/fa';
-import logoDark from "../imgs/logo-icssf-btn.png";
+import logoDark from "../imgs/logo-icssf-08.png";
 import itera from "../imgs/logo_itera_putih.png";
 import logoLight from "../imgs/logo-icssf-btn.png";
 import { Link } from 'react-router-dom';
@@ -32,15 +32,12 @@ const socialLinks = [
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className='bg-black-light'>
+    <footer>
         
         <div className="container">
 
           <div className="flex sm:flex-row items-center md:ml-20 md:mr-20 flex-col">
 
-            <div className='lg:w-3/3 items-center justify-center mt-6'>
-              <img src={itera} alt='itera' className="md:h-32 h-20 w-auto mb-2 mr-5 sm:mb-0" />
-            </div>
             <div className='lg:w-3/3 items-center justify-center mt-6'>
               <img src={logoDark} alt="Footer Logo" className="md:h-40 h-20 w-auto mb-2 mr-5 sm:mb-0" />
             </div>

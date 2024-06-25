@@ -118,7 +118,7 @@ const HomePage = () => {
 
 
             <h1 className="relative text-3xl mt-8 font-bold text-black lg:text-6xl">
-                        1st International Conference On Sustainability of Sciences for the Future
+                        1st International Conference On Sustainability of Sciences for the Future (ICSSF)
                         <h1 className="text-2xl text-blue">September 26-27th, 2024 </h1>
                     </h1>
             <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">

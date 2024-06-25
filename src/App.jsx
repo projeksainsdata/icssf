@@ -15,7 +15,7 @@ import EditProfile from "./pages/edit-profile.page";
 import Notifications from "./pages/notifications.page";
 import ManageBlogs from "./pages/manage-blogs.page";
 import Footer from "./pages/footer.page";
-import InformationPage from "./pages/information";
+import InformationPage from "./pages/information.page";
 
 
 export const UserContext = createContext({});

@@ -27,14 +27,7 @@ const HomePage = () => {
     let [ pageState, setPageState ] = useState("home");
 
     let categories = [
-        "programming",
-        "hollywood",
-        "film making",
-        "social media",
-        "cooking",
-        "tech",
-        "finance",
-        "travel",
+        "programming"
     ];
 
     const fetchLatestBlogs = ({ page = 1 }) => {
@@ -122,7 +115,9 @@ const HomePage = () => {
             </video>
             <div className="absolute top-0 left-0 w-full h-full bg-black-bg opacity-80"></div>
 
-            <h1 className="relative text-3xl mt-10 font-bold text-black lg:text-6xl">
+
+
+            <h1 className="relative text-3xl mt-8 font-bold text-black lg:text-6xl">
                         1st International Conference On Sustainability of Sciences for the Future
                         <h1 className="text-2xl text-blue">September 26-27th, 2024 </h1>
                     </h1>
@@ -168,7 +163,32 @@ const HomePage = () => {
         </section>
 
         <section>
-
+        <div className="relative mt-8 mb-2 flex gap-4">
+                    <Link 
+                        className="md:hidden flex justify-center items-center btn-light bg-dark-blue text-md text-white rounded-full gap-2 py-2 " 
+                        to="/program" 
+                        onClick={handleNavLinkClick}
+                    >
+                        <i className="fi fi-sr-memo-circle-check text-md mr-2"></i>
+                          Program
+                    </Link>
+                    <Link 
+                        className="md:hidden flex justify-center items-center btn-light bg-dark-blue text-md text-white rounded-full gap-2 py-2 " 
+                        to="/author" 
+                        onClick={handleNavLinkClick}
+                    >
+                        <i className="fi fi-sr-memo-circle-check text-md mr-2"></i>
+                          Author
+                    </Link>
+                    <Link 
+                        className="md:hidden flex justify-center items-center btn-light bg-dark-blue text-md text-white rounded-full gap-2 py-2 " 
+                        to="/information" 
+                        onClick={handleNavLinkClick}
+                    >
+                        <i className="fi fi-sr-memo-circle-check text-md mr-2"></i>
+                          Information
+                    </Link>
+            </div>
             <div className="relative flex flex-col lg:flex-row gap-6 p-5 px-3 max-w-6xl mx-auto">
                 <div className="lg:w-1/2">
                     <strong className="p-4 text-blue">

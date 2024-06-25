@@ -32,7 +32,7 @@ const socialLinks = [
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer>
+    <footer className='bg-black-light'>
         
         <div className="container">
 

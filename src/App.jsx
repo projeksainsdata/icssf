@@ -17,6 +17,7 @@ import ManageBlogs from "./pages/manage-blogs.page";
 import Footer from "./pages/footer.page";
 import InformationPage from "./pages/information";
 
+
 export const UserContext = createContext({});
 
 export const ThemeContext = createContext({});

@@ -74,13 +74,8 @@ const Navbar = () => {
                     <Link to="/information" className="link"><strong>Information</strong></Link>
                 </div>
 
-                <div className="flex items-center gap-2 md:gap-2 ml-auto">
-                    <button className="md:hidden relative z-50 flex" onClick={toggleMenu}>
-                        <i className={`fi ${menuOpen ? ' fi-rr-cross' : ' fi-rr-menu-burger'} text-2xl`}></i>
-                    </button>
-                </div>
 
-                <div className="hidden md:flex items-center gap-3 ml-auto">
+                <div className="flex items-center gap-3 ml-auto">
                     {isAdmin && (
                         <Link to="/editor" className="link gap-2 flex items-center">
                             <i className="flaticon-file-edit"></i>
@@ -91,7 +86,7 @@ const Navbar = () => {
                         <>
                             <Link to="/dashboard/notifications">
                                 <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10">
-                                    <i className="flaticon-bell text-2xl block mt-1"></i>
+                                    <i className="fi fi-sr-box text-2xl block mt-1"></i>
                                     {new_notification_available && (
                                         <span className="bg-red w-3 h-3 rounded-full absolute z-10 top-2 right-2"></span>
                                     )}
@@ -116,36 +111,8 @@ const Navbar = () => {
                     )}
                 </div>
 
-                
 
-                {/* Mobile Menu */}
-                <div className={`absolute top-16 right-0 bg-mobile-blur shadow-md p-5 rounded-lg md:hidden ${menuOpen ? 'block' : 'hidden'}`} onBlur={handleBlurMenu}>
-                    <Link to="/program" className="link text-black mb-4 py-2 block" onClick={toggleMenu}>Program</Link>
-                    <Link to="/author" className="link text-black mb-4 py-2 block" onClick={toggleMenu}>Author</Link>
-                    <Link to="/information" className="link text-black mb-4 py-2 block" onClick={toggleMenu}>Information</Link>
-                    {access_token && (
-                        <Link to="/dashboard/notifications" className="link py-2 block" onClick={toggleMenu}>
-                            Notifications
-                        </Link>
-                    )}
-                    {access_token ? (
-                        <div className="relative" onClick={handleUserNavPanel} onBlur={handleBlur}>
-                            <button className="w-12 h-12 mt-1 mb-4">
-                                <img src={profile_img} className="w-full h-full object-cover rounded-full" />
-                            </button>
-                            {userNavPanel && <UserNavigationPanel />}
-                        </div>
-                    ) : (
-                        <>
-                            <Link className="btn-dark mb-4 py-2 block" to="/signin" onClick={toggleMenu}>
-                                Sign In
-                            </Link>
-                            <Link className="btn-light py-2 block" to="/signup" onClick={toggleMenu}>
-                                Sign Up
-                            </Link>
-                        </>
-                    )}
-                </div>
+
             </nav>
             <Outlet />
         </>

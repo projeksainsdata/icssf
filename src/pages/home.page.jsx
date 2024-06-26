@@ -289,7 +289,7 @@ const HomePage = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-black-bg opacity-80"></div>
             
             <div className="relative container mx-auto px-6 py-8">
-                    <h2 className="text-3xl font-semibold text-center mb-2">Invited Speakers</h2>
+                    <h2 className="text-3xl font-semibold text-center mb-2">Keynote Speakers</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="bg-blur p-6 rounded-lg shadow-lg">
                             <div className="flex items-center mb-4">

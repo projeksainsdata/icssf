@@ -78,7 +78,7 @@ const UserAuthForm = ({ type }) => {
             Your browser does not support the video tag.
           </video>
           <div className="absolute top-0 left-0 w-full h-full bg-black-bg opacity-80"></div>
-          <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full h-full">
+          <div className="bg-blur-auth rounded-lg relative z-10 flex flex-col md:flex-row items-center justify-center w-auto h-auto p-6">
             <Toaster />
             <div className="flex flex-col justify-center items-center md:w-1/2 p-4 md:p-2">
               <img src={imageSource} className="w-32 h-32 md:w-full md:h-full object-cover mb-4" alt="Auth" />

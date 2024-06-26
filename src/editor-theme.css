@@ -68,6 +68,12 @@ body[data-theme="dark"] .ce-conversion-tool:hover{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+.bg-blur-auth {
+    background: transparent;
+    backdrop-filter: blur(100%);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .bg-mobile-blur {
     background: #382933;
     backdrop-filter: blur(50px);

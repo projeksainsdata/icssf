@@ -4,7 +4,7 @@ import FaqItem from './FaqItem';
 const DataFaq = () => {
   const faqData = [
     {
-      category: '[ CONFERENCE ]',
+      category: 'CONFERENCE',
       question: 'Does the registration fee include consumption during the activity?',
       answer: 'Yes, the registration fee includes lunch and two coffee breaks.',
     },
@@ -14,7 +14,7 @@ const DataFaq = () => {
       answer: 'Yes, we offer a special corporate rate for accommodation at Emersia Hotel. Kindly contact Ms Heny (WhatsApp) to avail the special rate.',
     },
     {
-      category: '[ PRESENTATION & PUBLICATION ]',
+      category: 'PRESENTATION & PUBLICATION',
       question: 'What publisher will be handling the proceedings?',
       answer: 'We are currently negotiating with Atlantis, a part of Springer-Nature. We will promptly inform you of the final decision.',
     },
@@ -29,7 +29,7 @@ const DataFaq = () => {
       answer: 'Yes, both in-person and online presentations are allowed. Further details on online presentation techniques will be provided later. Make sure to join the WhatsApp Group of Participants for updates.',
     },
     {
-      category: '[ PAYMENT ]',
+      category: 'PAYMENT',
       question: 'Is there a limit to the number of participants from students?',
       answer: 'Yes, the student package has a limit of 20 participants.',
     },

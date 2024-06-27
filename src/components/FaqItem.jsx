@@ -17,7 +17,7 @@ const FaqItem = ({ category, question, answer }) => {
       >
         <div>
             <div className='mt-4'>
-                <span className="text-md font-bold text-grey mt-6">{category}</span>
+                <span className="text-md font-bold text-grey mt-0">{category}</span>
             </div>
           <span className="block text-xl font-bold mt-4">{question}</span>
         </div>

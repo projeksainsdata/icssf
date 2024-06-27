@@ -16,6 +16,7 @@ import Notifications from "./pages/notifications.page";
 import ManageBlogs from "./pages/manage-blogs.page";
 import Footer from "./pages/footer.page";
 import InformationPage from "./pages/information.page";
+import ProgramPage from "./pages/program.page";
 
 
 export const UserContext = createContext({});
@@ -40,6 +41,7 @@ const App = () => {
                 <main className="flex-grow">
                     <Routes>
                     <Route path="/information" element={<InformationPage />} />
+                    <Route path="/program" element={<ProgramPage />} />
                         <Route path="/editor" element={<Editor />} />
                         <Route path="/editor/:blog_id" element={<Editor />} />
                         <Route path="/" element={<Navbar />}>
